@@ -8,20 +8,21 @@ const Navber = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="w-full  ">
-            <div className="max-w-[1280px] mx-auto px-2 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-[60px] sm:h-[96px]">
+        <nav className="w-full sticky top-0 bg-white/10 backdrop-blur-lg  z-40">
+            <div className="max-w-[1280px] mx-auto px-2 sm:px-6 lg:px-0">
+                <div className="flex items-center  justify-between h-[60px] sm:h-[96px]">
 
-                    <div className=" relative  ">
+                    <div className="flex  gap-2  ">
                         <Image
                             src={logo}
                             alt="web-logo"
                             width={50}
                             height={50}
-                            className="w-[90px] sm:w-[140px] object-contain"
+                            className=" object-cover  "
                         />
-
-                        <h1 className="absolute text-[17px] sm:text-[20px] font-semibold -right-8 sm:-right-2 top-0 sm:top-2 text-white">Planto</h1>
+                        <div className="flex items-center justify-center">
+                            <h1 className=" text-[20px] sm:text-[28px] font-semibold  text-white">Planto</h1>
+                        </div>
 
                     </div>
 

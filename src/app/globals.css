@@ -1,2 +1,27 @@
 @import "tailwindcss";
 
+.hero-section .swiper-slide {
+    padding-top: 220px;
+}
+
+
+@media only screen and (max-width:575px) {
+
+
+    .hero-section .swiper-slide img {
+        width: 90%;
+        object-fit: contain;
+
+    }
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+
+
+
+.back {
+    background-color: #374438;
+}
